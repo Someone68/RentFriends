@@ -22,6 +22,56 @@
         <h1>Pricing</h1>
         </div>
     </header>
+    <br>
+    <div class="columns">
+        <ul class="price">
+          <li class="cheader">Basic</li>
+          <li class="grey">$ 49.99</li>
+          <li>Stays for 1 hour</li>
+          <li>Doesn't know you at all</li>
+          <li>Not loyal</li>
+          <li>----</li>
+          <li>----</li>
+          <li class="grey"><button onclick="location.href='#'" class="button">Sign Up</button></li>
+        </ul>
+      </div>
+      
+      <div class="columns">
+        <ul class="price">
+          <li class="cheader" style="background-color:#04AA6D">Pro</li>
+          <li class="grey">$ 99.99</li>
+          <li>Stays for 1 day</li>
+          <li>Knows you a little</li>
+          <li>Somewhat loyal</li>
+          <li>Has similar interests</li>
+          <li>----</li>
+          <li class="grey"><button onclick="location.href='#'" class="button">Sign Up</button></li>
+        </ul>
+      </div>
+      
+      <div class="columns">
+        <ul class="price">
+          <li class="cheader">Premium</li>
+          <li class="grey">$ 199.99</li>
+          <li>Stays for 1 week</li>
+          <li>Knows all about you</li>
+          <li>Very loyal</li>
+          <li>Has same interests</li>
+          <li>Comes with free candy and video games</li>
+          <li class="grey"><button onclick="location.href='#'" class="button">Sign Up</button></li>
+        </ul>
+      </div>
+      <br>
+      <h1>Custom Plans</h1>
+      <form onsubmit="calcu(); return false;">
+    <input type="number" required placeholder="Length of stay (hrs)" id="stay" max="800">
+    <br><input required type="number" placeholder="How much they know you (%)" id="know" max="100">
+    <br><input required type="number" placeholder="Loyalty Percentage (%)" id="loyalty" max="100">
+    <br><input required type="number" placeholder="Common Interest Level (%)" id="interest" max="100">
+    <br><input type="submit" value="Calculate Price" required>
+</form>
+<h1 id="price"></h1>
+<p>Email us at 68.someone.m@gmail.com to get a quote</p><br>
       </div>
     <script src="script.js"></script>
 </body>
