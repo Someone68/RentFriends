@@ -86,16 +86,36 @@ button{
 }
 
 
-.header h1{
+.headertext h1{
     font-size: 80px;
     color: orangered;
 }
 
-.header h2{
+.headertext h2{
     font-size: 30px;
     color:white;
 }
 
 #master{
     margin-left:10px;
+}
+
+.miniheader{
+    height:calc(50vh - 50px);
+    width:100%;
+    color: white;
+    background: url(./img/friends.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*paralax effect*/
+    background-attachment: fixed;
+}
+
+.miniheader .headertext{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
