@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Inconsolata', monospace;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #272727;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    height: 50px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav a {
+    margin-right: 30px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Change the color of links on hover */
+  .nav a:hover:not(#master) {
+    color: orangered;
+  }
+
+.nav a img{
+    height: 35px;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+
+.header{
+    height:calc(100vh - 50px);
+    width:100%;
+    color: white;
+    background: url(./img/friends.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*paralax effect*/
+    background-attachment: fixed;
+}
+
+.headertext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headertext *{
+    margin: 2.5px;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+.header h1{
+    font-size: 80px;
+    color: orangered;
+}
+
+.header h2{
+    font-size: 30px;
+    color:white;
+}
+
+#master{
+    margin-left:10px;
+}
