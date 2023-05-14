@@ -26,6 +26,7 @@ body{
     top: 0;
     z-index: 999;
     height: 50px;
+    border-bottom: 1px solid orangered;
   }
   
   /* Style the links inside the navigation bar */
@@ -93,7 +94,7 @@ button, input[type="submit"]{
 
 .headertext h1{
     font-size: 80px;
-    color: orangered;
+    color: white;
 }
 
 .headertext h2{
@@ -195,4 +196,16 @@ input:focus:not([type="submit"]){
     border-bottom: 1px solid orangered;
     padding-bottom: 10px;
     cursor:text;
+}
+
+.headerbody{
+  background: rgba(0,0,0,0.3);
+  height:calc(50vh - 50px);
+    width:100%;
+}
+
+.headerrbody{
+  background: rgba(0,0,0,0.3);
+  height:calc(100vh - 50px);
+    width:100%;
 }
