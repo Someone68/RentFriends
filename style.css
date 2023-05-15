@@ -91,13 +91,27 @@ button, input[type="submit"]{
     transition: 0.2s;
 }
 
+.header .headertext h1{
+  font-size: 150px;
+  color: white;
+}
 
-.headertext h1{
+.header .headertext h2{
+  font-size: 90px;
+  color:white;
+}
+
+.header button{
+  transform: scale(1.5,1.5);
+}
+
+
+.cheader .headertext h1{
     font-size: 80px;
     color: white;
 }
 
-.headertext h2{
+.cheader .headertext h2{
     font-size: 30px;
     color:white;
 }
