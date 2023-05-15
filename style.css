@@ -178,7 +178,7 @@ button, input[type="submit"]{
     margin-left: 35px;
 }
 
-input:not([type="submit"]){
+input:not([type="submit"],[type="checkbox"]){
     border: none;
     padding: 10px;
     padding-bottom: 11px;
@@ -192,7 +192,7 @@ input:not([type="submit"]){
     cursor: pointer;
 }
 
-input:focus:not([type="submit"]){
+input:focus:not([type="submit"],[type="checkbox"]){
     border-bottom: 1px solid orangered;
     padding-bottom: 10px;
     cursor:text;
@@ -208,4 +208,71 @@ input:focus:not([type="submit"]){
   background: rgba(0,0,0,0.3);
   height:calc(100vh - 50px);
     width:100%;
+}
+
+.customplans{
+  text-align: center;
+}
+
+/* hide the default checkbox appearance */
+input[type="checkbox"] {
+  appearance: none;
+}
+
+/* create a custom checkbox appearance */
+input[type="checkbox"]::before {
+  cursor:pointer;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  background-color: #5f5f5f;
+  text-align:center;
+  color:white;
+}
+
+/* style the custom appearance when the checkbox is checked */
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  background-color: orangered;
+}
+
+label{
+  cursor:pointer;
+  user-select: none;
+}
+
+#loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: greenyellow;
+  animation: progress 1s forwards;
+  transition: opacity 0.6s ease-out;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 17%;
+  }
+  100% {
+    width: 100%;
+  }
 }

@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
+  <div id="loading-indicator">
+    <div class="loader"></div>
+  </div>  
     <nav id="nav" class="nav">
         <a href="index.html" id="master" onmouseover="document.getElementById('masterimg').src='img/MASTERhover2-final.png'" onmouseout="document.getElementById('masterimg').src='img/MASTER.png'"><img id="masterimg" src="img/MASTER.png"></a>
         <a href="pricing.html">Pricing</a>
@@ -28,11 +31,9 @@
     <div class="columns">
         <ul class="price">
           <li class="cheader">Basic</li>
-          <li class="grey">$ 49.99</li>
+          <li class="grey">$ 19.99</li>
           <li>Stays for 1 hour</li>
           <li>Doesn't know you at all</li>
-          <li>Not loyal</li>
-          <li>----</li>
           <li>----</li>
           <li class="grey"><button onclick="location.href='#'" class="button">Sign Up</button></li>
         </ul>
@@ -41,11 +42,9 @@
       <div class="columns">
         <ul class="price">
           <li class="cheader" style="background-color:#04AA6D">Pro</li>
-          <li class="grey">$ 99.99</li>
+          <li class="grey">$ 479.99</li>
           <li>Stays for 1 day</li>
-          <li>Knows you a little</li>
-          <li>Somewhat loyal</li>
-          <li>Has similar interests</li>
+          <li>Doesn't know you at all</li>
           <li>----</li>
           <li class="grey"><button onclick="location.href='#'" class="button">Sign Up</button></li>
         </ul>
@@ -54,27 +53,27 @@
       <div class="columns">
         <ul class="price">
           <li class="cheader">Premium</li>
-          <li class="grey">$ 199.99</li>
+          <li class="grey">$ 3389.99</li>
           <li>Stays for 1 week</li>
-          <li>Knows all about you</li>
-          <li>Very loyal</li>
-          <li>Has same interests</li>
-          <li>Comes with free candy and video games</li>
+          <li>Doesn't know you at all</li>
+          <li>Comes with free candy</li>
           <li class="grey"><button onclick="location.href='#'" class="button">Sign Up</button></li>
         </ul>
       </div>
       <br>
+      <div class="customplans">
       <h1>Custom Plans</h1>
-      <h2>You can save... or waste!</h2>
       <form onsubmit="calcu(); return false;">
-    <input type="number" required placeholder="Length of stay (hrs)" id="stay" max="800">
-    <br><input required type="number" placeholder="How much they know you (%)" id="know" max="100">
-    <br><input required type="number" placeholder="Loyalty Percentage (%)" id="loyalty" max="100">
-    <br><input required type="number" placeholder="Common Interest Level (%)" id="interest" max="100">
-    <br><input type="submit" value="Calculate Price" required>
+    <br><input type="number" required placeholder="Length of stay (hrs)" id="stay" max="800">
+    <br><br><label>
+      <input type="checkbox" id="candy">
+      Comes with free candy
+    </label>
+    <br><br><input type="submit" value="Calculate Price" required>
 </form>
 <h1 id="price"></h1>
 <p>Email us at 68.someone.m@gmail.com to get a quote</p><br>
+</div>
       </div>
     <script src="script.js"></script>
 </body>
