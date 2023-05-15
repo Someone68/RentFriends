@@ -153,9 +153,8 @@ button, input[type="submit"]{
   }
   
   .price .cheader {
-    background-color: #111;
+    background-color: #111 !important;
     border-radius: 10px 10px 0 0;
-    background: url(img/friends.jpg);
     color: orangered;
     font-size: 25px;
     background-size: cover;
