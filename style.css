@@ -140,7 +140,7 @@ button, input[type="submit"]{
   
   .price {
     list-style-type: none;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     border-radius: 10px;
     margin: 0;
     padding: 0;
@@ -165,7 +165,7 @@ button, input[type="submit"]{
   }
   
   .price li {
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #eee;
     padding: 20px;
     text-align: center;
   }
