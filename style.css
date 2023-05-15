@@ -149,7 +149,7 @@ button, input[type="submit"]{
   }
   
   .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(255, 255, 255, 0.438);
+    box-shadow: 0 8px 12px 0 rgba(255, 68, 0, 0.441);
   }
   
   .price .cheader {
@@ -277,4 +277,11 @@ label{
   100% {
     width: 100%;
   }
+}
+
+
+::-webkit-scrollbar{
+  width:0;
+  height:0;
+  display:none;
 }
