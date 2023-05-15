@@ -1,4 +1,5 @@
 let stay = document.getElementById("stay");
+let know = document.getElementById("know");
 let price = document.getElementById("price");
 let candy = document.getElementById("candy");
 
@@ -6,6 +7,7 @@ function calcu(){
     let total = eval(stay.value) * 20;
     if(candy.checked)
     total += 30;
+    total += know.value;
     total -= 1;
     total += .99;
     price.innerHTML = "Total: $ "+total;
